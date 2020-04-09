@@ -1,0 +1,56 @@
+:root {
+  --bg-color: #313131;
+  --font-color: white;
+  --link-color: #9fb5db;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 67%;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-color);
+}
+
+nav > ul {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+header.osul-header {
+  background: var(--bg-color);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+header.osul-header > h1 {
+  /* Replace margin with padding so sticky menu doesn't move */
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+ul.osul-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.67rem 0;
+}
+
+ul.osul-menu > li:not(:last-child) {
+  padding-right: 0.67rem;
+}
